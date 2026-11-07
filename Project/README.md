@@ -11,7 +11,8 @@ Are rental price models equally accurate across Saudi cities, and how do data qu
 | File | Description |
 |---|---|
 | `Saudi_Arabia_Real_Estate_AQAR.csv` | AQAR rental listings (3,718 rows, 4 cities) |
-| `AQAR_Week1.ipynb` | Week 1: cleaning, duplicate analysis, baseline models |
+| `Week1/AQAR_Week1.ipynb` | Week 1: cleaning, duplicate analysis, baseline models |
+| `Week2/` | Week 2: model comparison with cross-validation, district feature (planned) |
 
 ## Week 1 results
 
