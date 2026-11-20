@@ -29,7 +29,9 @@ Reading Arabic handwritten digits (٠ to ٩) using only linear algebra. No neura
 
 It prints the digits it reads, row by row, and saves `reading.png` with each digit boxed and labelled. No training or dataset is needed for this step, because it uses the saved bases in `bases.npy`.
 
-For a good reading: use a dark pen on plain light paper, leave space between the digits, and crop the photo so only the paper shows.
+The reader finds the paper on its own, so the photo does not need to be cropped. Keep the paper in the middle of the photo, use a dark pen on plain light paper, and leave space between the digits.
+
+It also adds one rule on top of the SVD model. Each digit is scaled to the same size before it is classified, so the size difference between a zero (a dot) and a five (a circle) is lost. When the model answers zero for a shape that has a hole or is as tall as the other digits, the reader takes the model's best non-zero answer instead. This rule is not part of the accuracy reported above.
 
 ## Files
 
