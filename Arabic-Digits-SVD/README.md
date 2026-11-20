@@ -23,11 +23,21 @@ Reading Arabic handwritten digits (٠ to ٩) using only linear algebra. No neura
 2. Install the libraries: `pip install numpy scipy pillow matplotlib`
 3. Run: `python arabic_digits_svd.py data my_digits.png`
 
+## Try it on a new photo
+
+`python read_photo.py photo.jpg`
+
+It prints the digits it reads, row by row, and saves `reading.png` with each digit boxed and labelled. No training or dataset is needed for this step, because it uses the saved bases in `bases.npy`.
+
+For a good reading: use a dark pen on plain light paper, leave space between the digits, and crop the photo so only the paper shows.
+
 ## Files
 
 | File | What it is |
 |---|---|
 | `arabic_digits_svd.py` | The full project: training, evaluation, handwriting test, and figure |
+| `read_photo.py` | Reads the digits in any new photo using the saved bases |
+| `bases.npy` | The learned bases: 50 singular vectors for each of the 10 digits |
 | `my_digits.png` | Photo of my handwritten digits |
 | `arabic_digits_svd.png` | Output figure |
 

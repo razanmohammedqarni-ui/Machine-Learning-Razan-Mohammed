@@ -122,6 +122,7 @@ bases = learn_bases(train_x, train_y)
 predictions = predict(test_x, bases, best_k)
 accuracy = 100 * np.mean(predictions == test_y)
 print("Test accuracy =", round(accuracy, 2), "%")
+np.save("bases.npy", np.stack([U[:, :best_k] for U in bases]))
 
 confusion = np.zeros((10, 10), dtype=int)
 for truth, guess in zip(test_y, predictions):
