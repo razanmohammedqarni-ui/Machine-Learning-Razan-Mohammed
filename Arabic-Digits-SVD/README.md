@@ -2,6 +2,8 @@
 
 Reading Arabic handwritten digits (٠ to ٩) using only linear algebra. No neural network.
 
+**Try it with your own handwriting, no setup needed:** [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/razanmohammedqarni-ui/Machine-Learning-Razan-Mohammed/blob/main/Arabic-Digits-SVD/try_it.ipynb)
+
 ![Result](arabic_digits_svd.png)
 
 ## Result
@@ -39,6 +41,7 @@ It also adds one rule on top of the SVD model. Each digit is scaled to the same 
 |---|---|
 | `arabic_digits_svd.py` | The full project: training, evaluation, handwriting test, and figure |
 | `read_photo.py` | Reads the digits in any new photo using the saved bases |
+| `try_it.ipynb` | Notebook to try the reader in Google Colab from a phone or laptop |
 | `bases.npy` | The learned bases: 50 singular vectors for each of the 10 digits |
 | `my_digits.png` | Photo of my handwritten digits |
 | `arabic_digits_svd.png` | Output figure |
